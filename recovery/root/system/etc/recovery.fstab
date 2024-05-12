@@ -8,8 +8,6 @@ vendor        /vendor       erofs        ro wait,slotselect,avb,logical,first_st
 vendor        /vendor       ext4         ro wait,slotselect,avb,logical,first_stage_mount
 product       /product      erofs        ro wait,slotselect,avb,logical,first_stage_mount
 product       /product      ext4         ro wait,slotselect,avb,logical,first_stage_mount
-mi_ext        /mnt/vendor/mi_ext       erofs         ro wait,slotselect,avb=vbmeta,logical,first_stage_mount,nofail
-mi_ext        /mnt/vendor/mi_ext       ext4         ro wait,slotselect,avb=vbmeta,logical,first_stage_mount,nofail
 
 # classic partitions
 /dev/block/by-name/metadata        /metadata        ext4        noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
