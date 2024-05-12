@@ -26,7 +26,6 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
-
 # Power
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
@@ -68,7 +67,10 @@ BOARD_RAMDISK_OFFSET := 0x11088000
 BOARD_KERNEL_TAGS_OFFSET := 0x07c08000
 BOARD_KERNEL_BASE := 0x40078000
 
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.tee_type=2 androidinit.fatal_reboot_target=recovery
+BOARD_KERNEL_CMDLINE := \
+        bootopt=64S3,32N2,64N2 \
+        androidboot.tee_type=2 \
+        androidinit.fatal_reboot_target=recovery
 
 BOARD_MKBOOTIMG_ARGS += \
         --header_version $(BOARD_BOOTIMG_HEADER_VERSION) \
