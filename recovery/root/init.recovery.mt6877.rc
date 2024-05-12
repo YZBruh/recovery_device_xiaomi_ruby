@@ -46,14 +46,21 @@ service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
     oneshot
     seclabel u:r:recovery:s0
 
-service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+service detect-variant /system/bin/variant-script.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
+service vgatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
     interface android.hardware.gatekeeper@1.0::IGatekeeper default
     user root
     group root
     disabled
     seclabel u:r:recovery:s0
 
-service vendor.keymaster-4-1-beanpod /vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
+service keymaster-4-1-beanpod /vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
     interface android.hardware.keymaster@4.0::IKeymasterDevice default
     interface android.hardware.keymaster@4.1::IKeymasterDevice default
     user root
@@ -62,28 +69,37 @@ service vendor.keymaster-4-1-beanpod /vendor/bin/hw/android.hardware.keymaster@4
     oneshot
     seclabel u:r:recovery:s0
 
-on property:vendor.sys.listener.registered=true
-    start vendor.gatekeeper-1-0
+on property:crypto.ready=1
+    start keymaster-4-1-beanpod 
 
 on property:hwservicemanager.ready=true
-    start vendor.keymaster-4-1-beanpod 
-    start vendor.gatekeeper-1-0
+    start keymaster-4-1-beanpod 
+    start gatekeeper-1-0
 
 on property:ro.crypto.state=unsupported
     stop teei_daemon
-    stop vendor.keymaster-4-1-beanpod 
-    stop vendor.gatekeeper-1-0
-    
+    stop keymaster-4-1-beanpod 
+    stop gatekeeper-1-0
+
 on property:ro.crypto.state=unencrypted
-    stop teei_daemon    
-    stop vendor.keymaster-4-1-beanpod
-    stop vendor.gatekeeper-1-0
-        
-on property:twrp.all.users.decrypted=true
     stop teei_daemon
-    stop vendor.keymaster-4-1-beanpod 
-    stop vendor.gatekeeper-1-0
+    stop keymaster-4-1-beanpod 
+    stop gatekeeper-1-0
+
+on property:twrp.decrypt.done=true
+    stop teei_daemon
+    stop keymaster-4-1-beanpod 
+    stop gatekeeper-1-0
+
+on property:crypto.ready=0
+    stop teei_daemon
+    stop keymaster-4-1-beanpod 
+    stop gatekeeper-1-0
+
+# Haptic feedback 
+on property:twrp.modules.loaded=true 
+    start vibratorfeature-hal-service
 
 on boot
-    start boot-hal-1-2
+    start detect-variant
     start health-hal-2-1
