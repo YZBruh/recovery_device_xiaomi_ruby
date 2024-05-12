@@ -62,6 +62,40 @@ The Redmi Note 12 [Pro(+) 5G/Discovery] (codenamed _"ruby"_) are mid-range smart
 | Rear Camera 3           | 2 MP, f/2.4, (macro)                                                         |
 | Front Camera            | 16 MP, f/2.5, (wide), 1/3.06", 1.0µm                                         |
 
+## Situation
+- [ ] Correct screen/recovery size
+- [ ] Working Touch, screen
+- [ ] Backup to internal/microSD
+- [ ] Restore from internal/microSD
+- [ ] reboot to system
+- [ ] ADB
+
+Medium checks
+- [ ] update.zip sideload
+- [ ] UI colors (red/blue inversions)
+- [ ] Screen goes off and on
+- [ ] F2FS/EXT4 Support, exFAT/NTFS where supported
+- [ ] all important partitions listed in mount/backup lists
+- [ ] backup/restore to/from external (USB-OTG) storage
+- [ ] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
+- [ ] decrypt /data (use the tool I offer to do this)
+- [ ] Correct date
+
+Minor checks
+- [ ] MTP export
+- [ ] reboot to bootloader
+- [ ] reboot to recovery
+- [ ] poweroff
+- [ ] battery level
+- [ ] temperature
+- [ ] encrypted backups
+- [ ] input devices via USB (USB-OTG) - keyboard, mouse and disks
+- [ ] USB mass storage export
+- [ ] set brightness
+- [ ] vibrate
+- [ ] screenshot
+- [ ] partition SD card
+
 ## Device Picture
 
 ![Xiaomi Redmi Note 12 Pro 5G](https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1680754145.42362209!800x800!85.png)
