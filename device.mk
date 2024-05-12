@@ -19,7 +19,6 @@ AB_OTA_PARTITIONS += \
     boot \
     dpm \
     dtbo \
-    gpueb \
     gz \
     lk \
     logo \
