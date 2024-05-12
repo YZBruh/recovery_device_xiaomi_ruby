@@ -1,8 +1,5 @@
 LOCAL_PATH := device/xiaomi/ruby
 
-# Hidl Service
-PRODUCT_ENFORCE_VINTF_MANIFEST := true
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH) 
 
