@@ -157,6 +157,7 @@ TW_SKIP_GET_FOLDER_SIZE := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_EXCLUDE_NANO := true
 TW_EXCLUDE_TWRPAPP := true
+TW_EXCLUDE_APEX := true
 TW_DEVICE_VERSION := ruby-test
 
 # Debug-tools
