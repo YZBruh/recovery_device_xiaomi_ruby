@@ -46,7 +46,7 @@ service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
     oneshot
     seclabel u:r:recovery:s0
 
-service detect-variant /system/bin/variant-script.sh
+service detect-variant /system/bin/detect-variant.sh
     user root
     group root
     disabled
