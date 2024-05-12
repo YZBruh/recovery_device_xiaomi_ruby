@@ -46,6 +46,12 @@ service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
     oneshot
     seclabel u:r:recovery:s0
 
+service vibratorfeature-hal-service /vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
+     class hal 
+     user system 
+     group system input 
+     seclabel u:r:recovery:s0
+
 service detect-variant /system/bin/detect-variant.sh
     user root
     group root
@@ -53,7 +59,7 @@ service detect-variant /system/bin/detect-variant.sh
     oneshot
     seclabel u:r:recovery:s0
 
-service vgatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
     interface android.hardware.gatekeeper@1.0::IGatekeeper default
     user root
     group root
