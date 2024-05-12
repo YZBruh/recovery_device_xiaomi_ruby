@@ -136,6 +136,9 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := ruby,ruby_pro,ruby_plus
+
 # Hack: prevent anti rollback
 PLATFORM_VERSION := 14
 PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
