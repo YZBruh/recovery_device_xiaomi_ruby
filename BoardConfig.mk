@@ -103,8 +103,8 @@ BOARD_MTK_DYNAMIC_PARTITIONS_PARTITION_LIST := \
         system \
         vendor \
         system_ext \
-        product \
-        mi_ext
+        product 
+
 BOARD_MTK_DYNAMIC_PARTITIONS_SIZE := 9122611200
 
 TARGET_COPY_OUT_VENDOR := vendor
