@@ -33,7 +33,7 @@ extern "C" {
 #include <errno.h>
 
 /* include custom pmt header */
-#include "include/pmt.h"
+#include "pmt.h"
 
 /* add value to variables that are added globally and are not worth */
 char *out = NULL;
