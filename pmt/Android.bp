@@ -10,7 +10,7 @@ cc_binary {
         "versioner.c",
     ],
     include_dirs: [
-        "src/include",
+        "include",
     ],
     cflags: [
         "-Wall",
