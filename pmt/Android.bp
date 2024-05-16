@@ -9,9 +9,7 @@ cc_binary {
         "tools.c",
         "versioner.c",
     ],
-    include_dirs: [
-        "include",
-    ],
+    export_include_dirs: ["include"],
     cflags: [
         "-Wall",
         "-g",
