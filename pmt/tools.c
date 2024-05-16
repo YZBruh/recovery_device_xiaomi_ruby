@@ -32,7 +32,7 @@ extern "C" {
 #include <errno.h>
 #include <fcntl.h>
 
-#include "include/pmt.h"
+#include "pmt.h"
 
 #define BFSIZE 1024
 
