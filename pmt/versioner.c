@@ -24,7 +24,7 @@ extern "C" {
 #include <stdint.h>
 #include <stdio.h>
 
-#include "include/pmt.h"
+#include "pmt.h"
 
 void version()
 {
