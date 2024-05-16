@@ -25,7 +25,7 @@ extern "C" {
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "include/pmt.h"
+#include "pmt.h"
 
 /* shorter error messages will be functional xd */
 void error(const char *err_msg, uint32_t errcode)
