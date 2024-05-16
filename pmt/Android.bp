@@ -1,0 +1,27 @@
+cc_binary { 
+    name: "pmt",
+    srcs: [
+        "pmt.c",
+        "docs.c",
+        "checkers.c",
+        "error.c",
+        "listpart.c",
+        "tools.c",
+        "versioner.c",
+    ],
+    cflags: [
+        "-DDEBUG",
+        "-Wall",
+        "-g",
+        "-O3",
+    ],
+    target: {
+        android: {
+            arch: "arm64",
+            vendor: true,
+        },
+    },
+    post_install_cmd: [
+        "cp out/target/product/ruby/system/bin/pmt $(TARGET_OUT_ROOT)/sbin/pmt",
+    ],
+}
