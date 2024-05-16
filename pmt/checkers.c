@@ -29,7 +29,7 @@ extern "C" {
 #include <sys/stat.h>
 #include <errno.h>
 
-#include "include/pmt.h"
+#include "pmt.h"
 
 extern bool pmt_use_cust_cxt;
 extern bool pmt_ab;
