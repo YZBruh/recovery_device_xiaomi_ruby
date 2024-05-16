@@ -21,7 +21,6 @@ cc_binary {
             vendor: true,
         },
     },
-    post_install_cmd: [
-        "cp out/target/product/ruby/system/bin/pmt $(TARGET_OUT_ROOT)/sbin/pmt",
-    ],
+    installable: true,
+    relative_install_path: "sbin",
 }
