@@ -69,6 +69,7 @@ BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_CMDLINE := \
         bootopt=64S3,32N2,64N2 \
         androidboot.tee_type=2 \
+        androidboot.selinux=permissive \
         androidinit.fatal_reboot_target=recovery
 
 BOARD_MKBOOTIMG_ARGS += \
@@ -132,6 +133,9 @@ BOARD_AVB_ENABLE := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ruby,ruby_pro,ruby_plus
+
+# include ruby-detect-variant
+TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)/ruby-detect-variant
 
 # Hack: prevent anti rollback
 PLATFORM_VERSION := 14
