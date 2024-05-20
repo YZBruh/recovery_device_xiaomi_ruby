@@ -1,8 +1,0 @@
-[
-  {
-    "remote": "https://github.com/xiaomi-mediatek-devs",
-    "repository": "android_kernel_xiaomi_mt6877",
-    "target_path": "kernel/xiaomi/mt6877",
-    "branch": "lineage-21"
-  }
-]
