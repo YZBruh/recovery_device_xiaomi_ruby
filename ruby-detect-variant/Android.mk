@@ -18,7 +18,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 # module name
-LOCAL_MODULE    := ruby-detect-variant
+LOCAL_MODULE := ruby-detect-variant
 
 # indicate that the binary is written in C
 LOCAL_MODULE_TAGS := c
