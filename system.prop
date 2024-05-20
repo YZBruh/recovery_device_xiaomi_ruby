@@ -1,3 +1,6 @@
+# Device
+ro.display.series=Redmi Note 12 Pro 5G
+
 # Dynamic Partitions
 ro.boot.dynamic_partitions=true
 
@@ -19,6 +22,7 @@ ro.hardware.kmsetkey=beanpod
 ro.hardware.gatekeeper=beanpod
 
 # Misc
+ro.mediatek.platform=MT6877
 ro.vendor.mediatek.platform=MT6877
 ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_svp_on_mtee_support=1
