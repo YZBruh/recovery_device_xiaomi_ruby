@@ -40,7 +40,7 @@ LOCAL_CFLAGS := \
     -Wexra
 
 # libs to be linked
-LOCAL_LDLIBS    := -llog
+LOCAL_LDLIBS := -llog
 
 # other configs
 LOCAL_MODULE_TAGS := optional
