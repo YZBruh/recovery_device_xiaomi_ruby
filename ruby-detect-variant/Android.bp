@@ -12,6 +12,7 @@ cc_binary {
         "-g",
     ],
     shared_libs: ["liblog"],
+    recovery_available: true,
     vendor: true,
     required: ["vendor"],
     installable: true,
