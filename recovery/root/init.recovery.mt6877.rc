@@ -71,7 +71,7 @@ service vibratorfeature-hal-service /vendor/bin/hw/vendor.xiaomi.hardware.vibrat
      group system input 
      seclabel u:r:recovery:s0
 
-service ruby-detect-variant /vendor/bin/ruby-detect-variant
+service ruby-detect-variant /system/bin/ruby-detect-variant
     user root
     group root
     disabled
