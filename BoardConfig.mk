@@ -157,10 +157,6 @@ TARGET_OTA_ASSERT_DEVICE := ruby,ruby_pro,rubypro,ruby_plus,rubyplus
 
 # TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)/ruby-detect-variant
 
-# Ensure recovery/root is always included
-$(call add-title-stage, Include recovery/root files)
-$(shell cp -rfp $(DEVICE_PATH)/recovery/root/* $(TARGET_OUT)/recovery/root/)
-
 # Hack: prevent anti rollback
 PLATFORM_VERSION := 14
 PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
