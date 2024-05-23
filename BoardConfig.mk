@@ -155,7 +155,7 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ruby,ruby_pro,rubypro,ruby_plus,rubyplus
 
-TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)/ruby-detect-variant
+# TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)/ruby-detect-variant
 
 # Ensure recovery/root is always included
 $(call add-title-stage, Include recovery/root files)
