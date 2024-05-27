@@ -69,6 +69,15 @@ include $(BUILD_PREBUILT)
 #####
 
 include $(CLEAR_VARS)
+LOCAL_MODULE       := android.hardware.gatekeeper@1.0-service-ruby
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_SRC_FILES    := $(RUBY_SYSTEMBIN)/android.hardware.gatekeeper@1.0-service
+LOCAL_MODULE_STEM  := android.hardware.gatekeeper@1.0-service
+LOCAL_MODULE_PATH  := $(TARGET_RECOVERY_ROOT_OUT)/system/bin
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE       := android.hardware.keymaster@4.1-service.beanpod
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
@@ -115,10 +124,11 @@ include $(PREBUILT_SHARED_LIBRARY)
 #####
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := task_profiles.json
+LOCAL_MODULE       := ruby_task_profiles.json
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := $(RUBY_SYSTEMETC)/task_profiles.json
+LOCAL_MODULE_STEM  := task_profiles.json
 LOCAL_MODULE_PATH  := $(TARGET_RECOVERY_ROOT_OUT)/system/etc
 include $(BUILD_PREBUILT)
 
@@ -230,18 +240,20 @@ include $(PREBUILT_SHARED_LIBRARY)
 #####
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := ueventd.rc
+LOCAL_MODULE       := ruby_ueventd.rc
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := $(RUBY_VENDORETC)/ueventd.rc
+LOCAL_MODULE_STEM  := ueventd.rc
 LOCAL_MODULE_PATH  := $(TARGET_RECOVERY_ROOT_OUT)/vendor/etc
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := manifest.xml
+LOCAL_MODULE       := ruby_manifest.xml
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := $(RUBY_VENDORETC)/vintf/manifest.xml
+LOCAL_MODULE_STEM  := manifest.xml
 LOCAL_MODULE_PATH  := $(TARGET_RECOVERY_ROOT_OUT)/vendor/etc/vintf
 include $(BUILD_PREBUILT)
 
