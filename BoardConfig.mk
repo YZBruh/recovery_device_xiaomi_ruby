@@ -155,7 +155,9 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ruby,ruby_pro,rubypro,ruby_plus,rubyplus
 
-# TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)/ruby-detect-variant
+TARGET_RECOVERY_DEVICE_DIRS += \
+     $(DEVICE_PATH)/ruby-detect-variant \
+     $(DEVICE_PATH)/recovery
 
 # Hack: prevent anti rollback
 PLATFORM_VERSION := 14
