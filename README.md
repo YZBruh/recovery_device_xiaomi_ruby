@@ -96,9 +96,6 @@ Minor checks
 - [ ] screenshot
 - [ ] partition SD card
 
-## Important note
- - Before building clone [kernel repo](https://github.com/xiaomi-mediatek-devs/android_kernel_xiaomi_mt6877) in `kernel/xiaomi/mt6877`
-
 ## Device Picture
 
 ![Xiaomi Redmi Note 12 Pro 5G](https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1680754145.42362209!800x800!85.png)
