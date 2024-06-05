@@ -93,14 +93,6 @@ LOCAL_SRC_FILES    := $(RUBY_SYSTEMBIN)/teei_daemon
 LOCAL_MODULE_PATH  := $(TARGET_RECOVERY_ROOT_OUT)/system/bin
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE       := mtk_plpath_utils
-LOCAL_MODULE_TAGS  := optional
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SRC_FILES    := $(RUBY_SYSTEMBIN)/mtk_plpath_utils
-LOCAL_MODULE_PATH  := $(TARGET_RECOVERY_ROOT_OUT)/system/bin
-include $(BUILD_PREBUILT)
-
 #####
 # Include shared system libraries
 #####
