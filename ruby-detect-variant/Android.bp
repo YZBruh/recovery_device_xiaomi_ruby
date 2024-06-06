@@ -14,5 +14,4 @@ cc_binary {
     ],
     include_dirs: ["ruby"],
     shared_libs: ["liblog"],
-    installable: true,
 }
