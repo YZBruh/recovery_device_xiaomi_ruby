@@ -92,4 +92,5 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
-include $(LOCAL_PATH)/ruby-detect-variant/Android.mk
+PRODUCT_PACKAGES += \
+    ruby-detect-variant
