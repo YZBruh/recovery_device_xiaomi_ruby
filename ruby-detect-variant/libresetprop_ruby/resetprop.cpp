@@ -4,8 +4,8 @@
 #include <map>
 
 #include <resetprop.hpp>
-#include <utils.hpp>
-#include <logging_modified.hpp>
+#include "utils.hpp"
+#include "logging_modified.hpp"
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <system_properties/system_properties.h>
