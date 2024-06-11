@@ -62,6 +62,7 @@ The Redmi Note 12 [Pro(+) 5G/Discovery] (codenamed _"ruby"_) are mid-range smart
 | Rear Camera 3           | 2 MP, f/2.4, (macro)                                                         |
 | Front Camera            | 16 MP, f/2.5, (wide), 1/3.06", 1.0µm                                         |
 
+
 ## Situation
 - [ ] Correct screen/recovery size
 - [ ] Working Touch, screen
