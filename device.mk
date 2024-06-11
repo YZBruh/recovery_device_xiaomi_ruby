@@ -92,5 +92,7 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
+# include varinat detector and modified libresetprop (libresetprop_ruby)
 PRODUCT_PACKAGES += \
+    libresetprop_ruby \
     ruby-detect-variant
