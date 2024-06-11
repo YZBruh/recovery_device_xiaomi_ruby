@@ -1,4 +1,4 @@
-1# By YZBruh
+# By YZBruh
 
 # Copyright (C) 2024 The Android Open Source Project
 # 
