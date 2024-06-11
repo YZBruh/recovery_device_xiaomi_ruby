@@ -73,7 +73,6 @@ LOCAL_CFLAGS = \
 LOCAL_C_INCLUDES += \
     external/magisk-prebuilt/include \
     $(LOCAL_PATH)/include/detector \
-    $(LOCAL_PATH)/include/resetprop \
     system/core/base/include \
     system/core/init
 
