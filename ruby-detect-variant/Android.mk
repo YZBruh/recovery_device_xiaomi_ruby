@@ -31,6 +31,7 @@ LOCAL_C_INCLUDES := \
     external/magisk-prebuilt/include \
     external/magisk-prebuilt/utils/include \
     external/magisk-prebuilt/external/nanopb \
+    external/magisk-prebuilt/systemproperties \
     external/magisk-prebuilt/systemproperties/include \
     external/magisk-prebuilt/utils \
     bionic/libc \
