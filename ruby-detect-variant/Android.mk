@@ -1,4 +1,4 @@
-# By YZBruh
+1# By YZBruh
 
 # Copyright (C) 2024 The Android Open Source Project
 # 
@@ -68,6 +68,7 @@ LOCAL_CFLAGS = \
     -g
 
 LOCAL_C_INCLUDES += \
+    $(MAGISK_ROOT_PATH)/include \
     $(LOCAL_PATH)/include/detector \
     $(LOCAL_PATH)/include/resetprop \
     system/core/base/include \
