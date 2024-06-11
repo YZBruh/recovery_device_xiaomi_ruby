@@ -38,7 +38,8 @@ LOCAL_C_INCLUDES := \
     bionic/libc \
     bionic/libc/include \
     system/core/base/include \
-    system/core/init
+    system/core/init \
+    system/logging/liblog/include
 
 LOCAL_SRC_FILES := \
     $(LIBRESETPROP_RUBY)/persist.cpp \
@@ -71,11 +72,12 @@ LOCAL_CFLAGS := \
     -Wall \
     -g
 
-LOCAL_C_INCLUDES += \
+LOCAL_C_INCLUDES := \
     external/magisk-prebuilt/include \
-    $(LOCAL_PATH)/include/detector \
+    $(LOCAL_PATH)/include \
     system/core/base/include \
-    system/core/init
+    system/core/init \
+    system/logging/liblog/include
 
 LOCAL_SHARED_LIBRARIES := \
     liblog \

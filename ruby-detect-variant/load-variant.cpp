@@ -20,8 +20,6 @@
 #define __IS_USES_LOGGING_FEATURES__
 
 #include <iostream>
-#include <android-base/logging.h>
-#include "log.h"
 #include <magisk.h>
 #include <resetprop.hpp>
 #include <ruby-detect-variant.hpp>
@@ -47,7 +45,7 @@ void load_variant(const char* target_variant, const char* target_model)
 
     umask(0);
     cmdline_logging();
-    
+
     /* apply properties */
     setprop("ro.product.name", target_variant, static_prop_svc);
     setprop("ro.build.product", target_variant, static_prop_svc);
